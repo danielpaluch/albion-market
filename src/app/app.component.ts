@@ -71,6 +71,12 @@ export class AppComponent {
                 chartData: foundSameMarket,
               };
               cityMarkets.push(cityMarket);
+            } else {
+              const cityMarket: ICityMarket = {
+                ...priceMarket,
+                chartData: [],
+              };
+              cityMarkets.push(cityMarket);
             }
           });
           this.cities = cityMarkets;
@@ -97,6 +103,7 @@ export class AppComponent {
     });
   }
   search() {
+    this.cities = [];
     const form = this.marketForm.getRawValue();
     let items: string = '';
     let itemNames = form.name.trim().split(',');
