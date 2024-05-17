@@ -1,0 +1,59 @@
+.main-page {
+  width: 100%;
+  min-height: 100%;
+  background-color: #d2d2d2;
+  display: flex;
+  flex-direction: column;
+  .search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 80px;
+    .example-form {
+      display: flex;
+      flex-direction: column;
+      .search-inputs {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+      }
+    }
+  }
+  .castles {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 36px;
+    .castle {
+      background-color: #ffffff;
+      margin-bottom: 36px;
+
+      width: 30%;
+      height: auto;
+      border: 2px solid black;
+      border-radius: 4px;
+      .header {
+        text-align: center;
+        padding-top: 8px;
+        font-size: large;
+        font-weight: 500;
+      }
+      .castle-info-prices {
+        width: 100%;
+        display: flex;
+        justify-content: row;
+        flex-wrap: wrap;
+        .castle-info-prices-bar {
+          width: 50%;
+          text-align: center;
+          .label {
+            font-size: 600;
+            font-weight: 550;
+          }
+        }
+      }
+    }
+  }
+}
